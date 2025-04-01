@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +13,7 @@ namespace MoviesAPI.Controllers
         private readonly IMapper _mapper;
         private readonly IMoviesService _moviesService;
         private readonly IGenresService _genresService;
-        private new List<String> _allowedExtenstions = new List<string> {".jpg",".png"};
+        private new List<String> _allowedExtenstions = new List<string> { ".jpg", ".png" };
         private long _maxAllowedPosterSize = 1048576; // 1 MB
 
         public MoviesController(IMoviesService moviesService, IGenresService genresService, IMapper mapper)
@@ -80,10 +80,12 @@ namespace MoviesAPI.Controllers
 
             var movie = _mapper.Map<Movie>(dto);
             movie.Poster = dataStream.ToArray();
+            movie.Genre = await _genresService.GetById(dto.GenreId);
 
             _moviesService.Add(movie);
 
-            return Ok(movie);
+            var movieDetailsDto = _mapper.Map<MovieDetailsDto>(movie);
+            return Ok(movieDetailsDto);
         }
 
         [HttpPut("{id}")]
@@ -100,7 +102,7 @@ namespace MoviesAPI.Controllers
                 return BadRequest("Invalid Genre ID!");
             }
 
-            if(dto.Poster != null)
+            if (dto.Poster != null)
             {
                 if (!_allowedExtenstions.Contains(Path.GetExtension(dto.Poster.FileName).ToLower()))
                 {
@@ -123,24 +125,28 @@ namespace MoviesAPI.Controllers
             movie.Rate = dto.Rate;
             movie.Year = dto.Year;
             movie.GenreId = dto.GenreId;
+            movie.Genre = await _genresService.GetById(dto.GenreId);
 
             _moviesService.Update(movie);
-            return Ok(movie);
 
+            var movieDetailsDto = _mapper.Map<MovieDetailsDto>(movie);
+            return Ok(movieDetailsDto);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(int id)
         {
             var movie = await _moviesService.GetById(id);
-            if (movie == null) {
+            if (movie == null)
+            {
                 return NotFound($"No movie was found with ID {id}");
             }
             // _context.Movies.Remove(movie);
             // _context.Remove(movie);
             _moviesService.Delete(movie);
 
-            return Ok(movie);
+            var dto = _mapper.Map<MovieDetailsDto>(movie);
+            return Ok(dto);
         }
 
     }
