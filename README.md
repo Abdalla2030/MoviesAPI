@@ -1,7 +1,7 @@
 # MoviesAPI
 🚀 A simple Movies API built with ASP.NET Core and Microsoft SQL Server, providing full CRUD operations to manage movies and genres efficiently.
 
-📺 **Watch the full tutorial video here:** 
+📺 **Watch this video for more details:** 
 
 <!-- Resize image -->
 <p align="center">
