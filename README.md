@@ -2,7 +2,7 @@
 🚀 A simple Movies API built with ASP.NET Core and Microsoft SQL Server, providing full CRUD operations to manage movies and genres efficiently.
 
 # Watch this video for more details
-https://www.youtube.com/watch?v=KNYJgYDEMRA
+[![Watch the video](https://img.youtube.com/vi/Js_S_Pcy950/0.jpg)](https://www.youtube.com/watch?v=KNYJgYDEMRA)
 
 
 ## 📄 API Endpoints
