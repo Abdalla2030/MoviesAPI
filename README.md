@@ -1,7 +1,7 @@
 # MoviesAPI
 🚀 A simple Movies API built with ASP.NET Core and Microsoft SQL Server, providing full CRUD operations to manage movies and genres efficiently.
 
-[![Watch the video](https://img.youtube.com/vi/Js_S_Pcy950/0.jpg)](https://www.youtube.com/watch?v=KNYJgYDEMRA)
+📺 **Watch the full tutorial video here:** 
 
 <!-- Resize image -->
 <p align="center">
@@ -16,10 +16,11 @@
 
 ### 🎬 Movies Endpoints
 
-| **Method** | **Endpoint**           | **Description**                 |
-|------------|------------------------|---------------------------------|
+| **Method** | **Endpoint**           | **Description**                  |
+|------------|------------------------|----------------------------------|
 | **GET**    | `/api/movies`           | Get all movies                  |
 | **GET**    | `/api/movies/{id}`      | Get a movie by ID               |
+| **GET**    | `/api/movies/GetByGenreId`| Get movies by genre ID        |
 | **POST**   | `/api/movies`           | Create a new movie              |
 | **PUT**    | `/api/movies/{id}`      | Update an existing movie        |
 | **DELETE** | `/api/movies/{id}`      | Delete a movie                  |
