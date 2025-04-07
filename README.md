@@ -5,7 +5,8 @@
 
 <!-- Resize image -->
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=KNYJgYDEMRA">
+  <a href="![VID](https://github.com/user-attachments/assets/ea1e6636-b4b4-4e44-a1fe-78e9d5cef1c1)
+">
     <img src="https://img.youtube.com/vi/Js_S_Pcy950/0.jpg" alt="Watch the video" width="800" />
   </a>
 </p>
