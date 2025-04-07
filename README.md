@@ -5,10 +5,11 @@
 
 <!-- Resize image -->
 <p align="center">
-  <a href="https://i9.ytimg.com/vi_webp/KNYJgYDEMRA/mqdefault.webp?v=67f4486d&sqp=CJCf0b8G&rs=AOn4CLDZizD83FQJhFDrBSUIgEcAOiEvzA">
-    <img src="https://img.youtube.com/vi/Js_S_Pcy950/0.jpg" alt="Watch the video" width="800" />
+  <a href="https://www.youtube.com/watch?v=KNYJgYDEMRA">
+    <img src="![VID](https://github.com/user-attachments/assets/a5d5bb0f-309a-4c76-89cd-aa8c26ad2a63)" alt="Watch the video" width="800" />
   </a>
 </p>
+
 
 
 
