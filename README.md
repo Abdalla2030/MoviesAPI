@@ -4,11 +4,13 @@
 📺 **Watch this video for more details:** 
 
 <!-- Resize image -->
+<!-- Resize image -->
 <p align="center">
   <a href="https://www.youtube.com/watch?v=KNYJgYDEMRA">
-    <img src="![VID](https://github.com/user-attachments/assets/a5d5bb0f-309a-4c76-89cd-aa8c26ad2a63)" alt="Watch the video" width="800" />
+    <img src="https://github.com/user-attachments/assets/a5d5bb0f-309a-4c76-89cd-aa8c26ad2a63" alt="Watch the video" width="800" />
   </a>
 </p>
+
 
 
 
